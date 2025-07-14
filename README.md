@@ -20,6 +20,7 @@ This repository provides a data structure and automation scripts for managing da
 2. **Setup a Conda environemnt**
    ```bash
    conda create -n datastorage python=3.12 numpy pandas pyyaml gitpython git
+   conda activate datastorage
    ```
 
 
