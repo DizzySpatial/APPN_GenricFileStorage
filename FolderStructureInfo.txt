@@ -1,0 +1,99 @@
+# File Structure
+
+node
+	
+	YYYY_ProjectDesc{_internal/external}{_Researcher}{_org} 
+		
+		Site{_source}
+			
+			SensorPlatform
+
+				YYYYMMDD 
+
+					runXX
+
+						T0_raw
+						T1_proc
+						T2_traits
+			*Documents
+			*code
+
+		*Documents
+		*code
+	Documents
+	code
+
+# Summary 
+# Separator
+use underscore to separate blocks of information 
+
+
+# Optional Arguments
+{_*} a parameter that can be included but isn't required. It must be possible to programmatically identify these arguments.
+
+
+*Documents & *code
+Optional folders used to store relevant information for that level of the folder structure
+
+
+# Overview of Arguments
+#+++++
+
+node
+	name of node with the UNI abbr first
+	e.g. USYD_Narrabri
+
+#+++++
+
+YYYY
+	year a project started
+	e.g. 2025
+
+ProjectDesc
+	   a short description of the project with no spaces
+	   e.g. SIFcalibration
+
+internal/external
+	Optional Argument
+	Describe if a project is internal or external Using IorE
+	e.g. E
+
+Researcher
+	Optional Argument
+	Last Name of lead researcher, using Title Case
+	e.g. Salter
+
+org
+	Optional Argument
+	internal code for an organisation (important for UQ). Should all be caps and a fixed length
+	e.g. ABC
+
+#+++++
+
+Site	
+	Name or code of a site
+
+Source
+	   Optional Argument
+	   F for field, C for controlled environment
+	   e.g. F
+
+#+++++
+SensorPlatform
+	Short Name of sensor platform. For field data (e.g. Biomass cuts) the SensorPlatform is called GroundTruth
+	e.g. GOBI
+
+#+++++
+YYYYMMDD
+	   date of the field work or data collection. Leading zeros included for months and days
+	   Note. For things like a weather station or soil moisture probes it can be the first/last day of the month for each folder containing 1 month's data, or the date the logging started for all data in 1 folder, or the date of data retrieval for inconsistent collection.  
+	   e.g. 20250101
+
+
+#+++++
+run 
+	   the number of blocks of data to be processed together. runXX where X is a number. Includes leading zeros and is zero-indexed (00, 01, 02)
+	   Note. For drones, this is individual flights; for soil radar, it would be one pass with the tractor, etc.
+	   e.g. run00
+
+

@@ -1,0 +1,41 @@
+# nodes:
+#   name: "USYD_Narrabri"
+#   university: "University of Sydney"
+#   location: "Narrabri, NSW, Australia"
+#   SensorPlatforms:
+#     - name: GOBI
+#     - name: HIRES
+#     - name: M3M
+#     - name: CALVIS
+#     - name: PHENOMATE
+#     - name: MOLE
+#     - name: TEMS
+#     - name: PTEMS
+#     - name: LITERAL
+#     - name: H30T
+#     - name: RHIZO
+# 
+nodes:  # Top-level key, now containing a list of nodes
+  - name: "USYD_Narrabri"
+    university: "University of Sydney"
+    location: "Narrabri, NSW, Australia"
+    SensorPlatforms:
+      - GOBI
+      - HIRES
+      - M3M
+      - CALVIS
+      - PHENOMATE
+      - MOLE
+      - TEMS
+      - PTEMS
+      - LITERAL
+      - H30T
+      - RHIZO
+
+
+  # - name: "Another_Node" # Add another node here
+  #   university: "University of Sydney"
+  #   location: "Some Other Location"
+  #   SensorPlatforms:
+  #     - GOBI
+  #     - HIRES
